@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script>
+$(document).ready(() =>  
+    $("button").click( () =>  $.ajax({
+        url: "https://dados-ma.herokuapp.com/", 
+        success: (result) => console.log (result) })
+))
+</script>
+</head>
+<body>
+<button>Executa a consulta ao REST</button>
+</body>
+</html>
